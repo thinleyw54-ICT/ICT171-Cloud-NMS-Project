@@ -18,7 +18,8 @@ Configuration:
 Connected to the Azure Virtual Machine using SSH.
 
 ```bash
-ssh azureuser@<Public-IP>
+ssh -i C:\Users\thinl\Downloads\ICT171-VM-key.pem azureuser@20.2.86.127
+
 ```
 
 Successful SSH access allowed remote administration of the server.
