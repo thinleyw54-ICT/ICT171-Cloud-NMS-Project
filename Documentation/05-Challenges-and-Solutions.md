@@ -1,6 +1,27 @@
 # Challenges and Solutions
+## Challenge 1: Azure Virtual Machine Region Availability
 
-## Challenge 1: Initial Website Deployment
+### Problem
+
+During the creation of the Microsoft Azure Virtual Machine, the preferred region was unavailable due to limited resource capacity. The selected VM size could not be deployed in the chosen region, which prevented the virtual machine from being created successfully.
+
+### Solution
+
+Alternative Azure regions were evaluated and a region with available resources was selected. The virtual machine configuration was then redeployed in the new region.
+
+The deployment settings were reviewed to ensure:
+
+* Region availability
+* VM size compatibility
+* Resource allocation
+* Network configuration
+
+### Result
+
+The virtual machine was successfully deployed in an available Azure region, allowing the project to proceed with server configuration and website hosting.
+
+
+## Challenge 2: Initial Website Deployment
 
 ### Problem
 
@@ -26,7 +47,7 @@ The custom project website became accessible through the Azure Virtual Machine p
 
 ---
 
-## Challenge 2: DNS Configuration
+## Challenge 3: DNS Configuration
 
 ### Problem
 
@@ -49,7 +70,7 @@ Users were able to access the website using the domain name instead of the serve
 
 ---
 
-## Challenge 3: SSL Certificate Installation
+## Challenge 4: SSL Certificate Installation
 
 ### Problem
 
@@ -76,7 +97,7 @@ HTTPS was successfully enabled and the website became secure.
 
 ---
 
-## Challenge 4: Website Design Improvements
+## Challenge 5: Website Design Improvements
 
 ### Problem
 
@@ -99,7 +120,7 @@ The final website provided a professional and user-friendly interface.
 
 ---
 
-## Challenge 5: Real-Time Monitoring Integration
+## Challenge 6: Real-Time Monitoring Integration
 
 ### Problem
 
