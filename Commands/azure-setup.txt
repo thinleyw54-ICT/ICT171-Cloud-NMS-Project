@@ -1,1 +1,8 @@
+SSH Connection
 
+ssh azureuser@20.2.86.127
+
+System Update
+
+sudo apt update
+sudo apt upgrade -y
