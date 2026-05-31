@@ -1,149 +1,79 @@
 # Deployment Steps
 
-## 1. Connect to Azure Virtual Machine
+## Step 1: Create Microsoft Azure Virtual Machine
+
+A new Ubuntu Linux Virtual Machine was created in Microsoft Azure to host the cloud-based monitoring environment.
+
+Configuration:
+
+* Operating System: Ubuntu Linux
+* Cloud Platform: Microsoft Azure
+* Public IP Address: Enabled
+* SSH Access: Enabled
+
+---
+
+## Step 2: Connect to the Virtual Machine
+
+Connected to the Azure Virtual Machine using SSH.
 
 ```bash
 ssh azureuser@<Public-IP>
 ```
 
-Connected remotely to the Ubuntu Linux Virtual Machine hosted in Microsoft Azure.
+Successful SSH access allowed remote administration of the server.
 
 ---
 
-## 2. Update the Server
+## Step 3: Update the Server
+
+Updated package repositories and installed available updates.
 
 ```bash
 sudo apt update
 sudo apt upgrade -y
 ```
 
-Updated system packages and security updates.
+This ensured the server was fully updated before software installation.
 
 ---
 
-## 3. Install Nginx Web Server
+## Step 4: Install Nginx Web Server
+
+Installed Nginx to host the project website.
 
 ```bash
 sudo apt install nginx -y
 ```
 
-Verified Nginx status:
+Verified Nginx service status:
 
 ```bash
 sudo systemctl status nginx
 ```
 
-Enabled Nginx:
+Started and enabled Nginx:
 
 ```bash
 sudo systemctl enable nginx
+sudo systemctl start nginx
 ```
 
 ---
 
-## 4. Configure Website Files
+## Step 5: Configure Website Files
 
-Navigate to web directory:
+Navigated to the website directory:
 
 ```bash
 cd /var/www/html
 ```
 
-Edit website files:
+Edited website files:
 
 ```bash
 sudo nano index.html
 sudo nano assignment1.html
 sudo nano assignment2.html
-sudo nano about.html
-sudo nano style.css
+sudo nano about
 ```
-
----
-
-## 5. Install Netdata
-
-```bash
-wget -O /tmp/netdata-kickstart.sh https://my-netdata.io/kickstart.sh
-sh /tmp/netdata-kickstart.sh
-```
-
-Access dashboard:
-
-```text
-http://<Public-IP>:19999
-```
-
----
-
-## 6. Configure Domain Name
-
-Verified DNS records were correctly pointing to the Azure Public IP address.
-
-Domain:
-
-```text
-https://thinleyict171.it.com
-```
-
----
-
-## 7. Install SSL Certificate
-
-```bash
-sudo apt install certbot python3-certbot-nginx -y
-```
-
-Generate certificate:
-
-```bash
-sudo certbot --nginx
-```
-
-Verify HTTPS:
-
-```text
-https://thinleyict171.it.com
-```
-
----
-
-## 8. Restart Services
-
-```bash
-sudo systemctl restart nginx
-```
-
----
-
-## 9. GitHub Version Control
-
-Check repository status:
-
-```bash
-git status
-```
-
-Add files:
-
-```bash
-git add .
-```
-
-Commit changes:
-
-```bash
-git commit -m "Project update"
-```
-
-Push to GitHub:
-
-```bash
-git push
-```
-
----
-
-## Outcome
-
-Successfully deployed a Cloud-Based Network Monitoring System using Microsoft Azure, Ubuntu Linux, Nginx, Netdata, DNS configuration, HTTPS security, and GitHub version control.
