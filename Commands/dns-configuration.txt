@@ -1,0 +1,11 @@
+Domain Name:
+thinleyict171.it.com
+
+DNS Record Type:
+A Record
+
+Azure Public IP:
+20.2.86.127
+
+Purpose:
+Connect custom domain to Azure Virtual Machine.
