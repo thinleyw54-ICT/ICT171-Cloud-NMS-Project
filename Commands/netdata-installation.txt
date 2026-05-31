@@ -1,0 +1,13 @@
+Install Netdata
+
+wget -O /tmp/netdata-kickstart.sh https://my-netdata.io/kickstart.sh
+
+sudo sh /tmp/netdata-kickstart.sh
+
+Check Service
+
+sudo systemctl status netdata
+
+Monitoring Dashboard
+
+http://20.2.86.127:19999
