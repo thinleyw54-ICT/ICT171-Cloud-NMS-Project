@@ -1,8 +1,8 @@
 SSH Connection
 
-ssh azureuser@20.2.86.127
 
-System Update
+System Updatessh -i C:\Users\thinl\Downloads\ICT171-VM-key.pem azureuser@20.2.86.127
+
 
 sudo apt update
 sudo apt upgrade -y
