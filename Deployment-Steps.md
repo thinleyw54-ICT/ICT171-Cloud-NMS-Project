@@ -2,12 +2,12 @@
 
 ## Step 1: Create Microsoft Azure Virtual Machine
 
-A new Ubuntu Linux Virtual Machine was created in Microsoft Azure to host the cloud-based monitoring environment.
+A new Ubuntu Linux Virtual Machine was created in Microsoft Azure to host the Cloud-Based Network Monitoring System.
 
 Configuration:
 
+* Cloud Provider: Microsoft Azure
 * Operating System: Ubuntu Linux
-* Cloud Platform: Microsoft Azure
 * Public IP Address: Enabled
 * SSH Access: Enabled
 
@@ -19,23 +19,22 @@ Connected to the Azure Virtual Machine using SSH.
 
 ```bash
 ssh -i C:\Users\thinl\Downloads\ICT171-VM-key.pem azureuser@20.2.86.127
-
 ```
 
-Successful SSH access allowed remote administration of the server.
+This provided remote access to the server for administration and software installation.
 
 ---
 
 ## Step 3: Update the Server
 
-Updated package repositories and installed available updates.
+Updated package repositories and installed system updates.
 
 ```bash
 sudo apt update
 sudo apt upgrade -y
 ```
 
-This ensured the server was fully updated before software installation.
+This ensured the server was running the latest packages and security updates.
 
 ---
 
@@ -47,13 +46,13 @@ Installed Nginx to host the project website.
 sudo apt install nginx -y
 ```
 
-Verified Nginx service status:
+Verified Nginx status:
 
 ```bash
 sudo systemctl status nginx
 ```
 
-Started and enabled Nginx:
+Enabled Nginx:
 
 ```bash
 sudo systemctl enable nginx
@@ -70,24 +69,34 @@ Navigated to the website directory:
 cd /var/www/html
 ```
 
-Edited website files:
+Created and edited website files:
 
 ```bash
 sudo nano index.html
 sudo nano assignment1.html
 sudo nano assignment2.html
-sudo nano about
+sudo nano about.html
+sudo nano style.css
 ```
+
+Restarted Nginx after making changes:
+
+```bash
+sudo systemctl restart nginx
+```
+
+---
+
 ## Step 6: Install Netdata Monitoring Platform
 
-Installed Netdata using the official installation script.
+Installed Netdata for real-time monitoring.
 
 ```bash
 wget -O /tmp/netdata-kickstart.sh https://my-netdata.io/kickstart.sh
 sudo sh /tmp/netdata-kickstart.sh
 ```
 
-Verified Netdata service status:
+Verified Netdata service:
 
 ```bash
 sudo systemctl status netdata
@@ -96,24 +105,29 @@ sudo systemctl status netdata
 Accessed the monitoring dashboard:
 
 ```text
-http://<Public-IP>:19999
+http://20.2.86.127:19999
 ```
 
-Netdata provides real-time monitoring of CPU usage, memory usage, disk activity, and network traffic.
+Netdata provides real-time monitoring of:
+
+* CPU Usage
+* Memory Usage
+* Disk Activity
+* Network Traffic
+* System Health
 
 ---
 
 ## Step 7: Configure DNS
 
-## Step 7: Configure DNS
-
-Configured DNS records to connect the custom domain to the Microsoft Azure Virtual Machine.
+Configured DNS records to connect the custom domain to the Azure Virtual Machine.
 
 DNS Record Type:
 
 ```text
 A Record
 ```
+
 Domain Name:
 
 ```text
@@ -126,24 +140,21 @@ Azure Public IP Address:
 20.2.86.127
 ```
 
-The DNS A record was configured to point the domain name to the Azure Virtual Machine public IP address (20.2.86.127).
+The DNS A record was configured to point the domain name to the Azure Public IP address.
 
-After the DNS records were updated, DNS propagation was verified to ensure the domain correctly resolved to the Azure-hosted web server.
+DNS propagation was verified after configuration.
 
-Successful DNS configuration enabled users to access the project website through:
+Website Access:
 
 ```text
 https://thinleyict171.it.com
 ```
 
-instead of directly using the server IP address.
-
-
 ---
 
 ## Step 8: Install SSL Certificate
 
-Installed Certbot and the Nginx plugin.
+Installed Certbot and the Nginx SSL plugin.
 
 ```bash
 sudo apt install certbot python3-certbot-nginx -y
@@ -161,60 +172,45 @@ Generated SSL certificate:
 sudo certbot --nginx -d thinleyict171.it.com
 ```
 
-Verified certificate:
+Verified certificates:
 
 ```bash
 sudo certbot certificates
 ```
 
-Tested automatic renewal:
+Tested automatic certificate renewal:
 
 ```bash
 sudo certbot renew --dry-run
 ```
 
----
-
-## Step 9: Restart Services
-
-Restarted Nginx after configuration changes.
-
-```bash
-sudo systemctl restart nginx
-```
-
-Verified Nginx status:
-
-```bash
-sudo systemctl status nginx
-```
-
-Verified Netdata status:
-
-```bash
-sudo systemctl status netdata
-```
+HTTPS was successfully enabled for the website.
 
 ---
 
-## Step 10: Verify Deployment
+## Step 9: Verify Deployment
 
-Website:
+Verified website accessibility:
 
 ```text
 https://thinleyict171.it.com
 ```
 
-Monitoring Dashboard:
+Verified Netdata dashboard:
 
 ```text
 http://20.2.86.127:19999
 ```
 
-The deployment was successfully completed and tested.
+Checked service status:
+
+```bash
+sudo systemctl status nginx
+sudo systemctl status netdata
+```
 
 ---
 
 ## Outcome
 
-The Cloud-Based Network Monitoring System was successfully deployed using Microsoft Azure, Ubuntu Linux, Nginx, Netdata, DNS configuration, and HTTPS security. The final solution provides real-time monitoring capabilities through a web-based dashboard and demonstrates practical cloud computing and server administration skills.
+The Cloud-Based Network Monitoring System was successfully deployed using Microsoft Azure, Ubuntu Linux, Nginx, Netdata, DNS configuration, and HTTPS security. The solution provides a secure and scalable monitoring environment with real-time performance monitoring and web-based accessibility.
