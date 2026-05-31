@@ -105,23 +105,39 @@ Netdata provides real-time monitoring of CPU usage, memory usage, disk activity,
 
 ## Step 7: Configure DNS
 
-Configured DNS records to connect the custom domain to the Azure Virtual Machine.
+## Step 7: Configure DNS
 
-DNS Record:
+Configured DNS records to connect the custom domain to the Microsoft Azure Virtual Machine.
+
+DNS Record Type:
 
 ```text
 A Record
 ```
-
-Domain:
+Domain Name:
 
 ```text
 thinleyict171.it.com
 ```
 
-The A record was configured to point to the Azure Public IP address.
+Azure Public IP Address:
 
-DNS propagation was verified after configuration.
+```text
+20.2.86.127
+```
+
+The DNS A record was configured to point the domain name to the Azure Virtual Machine public IP address (20.2.86.127).
+
+After the DNS records were updated, DNS propagation was verified to ensure the domain correctly resolved to the Azure-hosted web server.
+
+Successful DNS configuration enabled users to access the project website through:
+
+```text
+https://thinleyict171.it.com
+```
+
+instead of directly using the server IP address.
+
 
 ---
 
