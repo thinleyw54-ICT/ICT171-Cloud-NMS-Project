@@ -1,0 +1,31 @@
+Install Nginx
+
+sudo apt install nginx -y
+
+Check Nginx Status
+
+sudo systemctl status nginx
+
+Enable Nginx
+
+sudo systemctl enable nginx
+
+Start Nginx
+
+sudo systemctl start nginx
+
+Restart Nginx
+
+sudo systemctl restart nginx
+
+Website Directory
+
+cd /var/www/html
+
+Edit Website Files
+
+sudo nano index.html
+sudo nano assignment1.html
+sudo nano assignment2.html
+sudo nano about.html
+sudo nano style.css
