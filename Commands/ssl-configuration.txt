@@ -1,0 +1,19 @@
+Install Certbot
+
+sudo apt install certbot python3-certbot-nginx -y
+
+Generate SSL Certificate
+
+sudo certbot --nginx -d thinleyict171.it.com
+
+Check Certificates
+
+sudo certbot certificates
+
+Test Renewal
+
+sudo certbot renew --dry-run
+
+Restart Nginx
+
+sudo systemctl restart nginx
