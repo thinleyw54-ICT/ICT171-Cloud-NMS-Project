@@ -83,7 +83,7 @@ Users were able to access the website using the domain name instead of the serve
 
 The website initially operated over HTTP and was not secure.
 
-<img width="1602" height="639" alt="Screenshot 2026-05-28 084824" src="https://github.com/user-attachments/assets/9a5a8916-a1e7-4462-a1d6-5be088de4964" />
+<img width="602" height="139" alt="Screenshot 2026-05-28 084824" src="https://github.com/user-attachments/assets/9a5a8916-a1e7-4462-a1d6-5be088de4964" />
 
 ### Solution
 
