@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:250px;
+    height:100vh;
+    background:#1e293b;
+    padding-top:30px;
+}
+
+.sidebar h2{
+    color:white;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:#6d5dfc;
+}
+
+/* MAIN CONTENT */
+
+.main{
+    margin-left:250px;
+    padding:40px;
+}
+
+/* HERO */
+
+.hero{
+    margin-bottom:40px;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#1e293b;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#64748b;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom:30px;
+}
+
+.card h2{
+    color:#6d5dfc;
+    margin-bottom:20px;
+}
+
+.card p{
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    background:#6d5dfc;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+.btn:hover{
+    background:#5646e8;
+}
+
+/* MONITORING CARDS */
+
+.monitor-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.monitor-box{
+    background:#f8fafc;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.monitor-box h3{
+    color:#6d5dfc;
+    margin-bottom:10px;
+}
+
+.online{
+    color:green;
+    font-weight:bold;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+
+    .main{
+        margin-left:0;
+    }
+
+}
