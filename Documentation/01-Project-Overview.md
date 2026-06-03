@@ -1,7 +1,9 @@
 # Project Overview
 
-This project demonstrates the implementation of a Cloud-Based Network Monitoring System using Microsoft Azure and Netdata.
+The main objective of this project was to design and implement a cloud-based server and network monitoring system using Microsoft Azure and Netdata. The project was developed to demonstrate practical cloud infrastructure deployment, Linux server administration, web hosting, DNS configuration, and network monitoring skills.
 
-The monitoring environment is hosted on an Ubuntu Linux Virtual Machine deployed in Microsoft Azure. Nginx is used as the web server and Netdata provides real-time monitoring of CPU usage, memory consumption, disk activity, and network traffic.
+The system was deployed on a Microsoft Azure Ubuntu Linux Virtual Machine configured as a cloud server environment. The server hosts a custom monitoring website using the Nginx web server and provides real-time monitoring through the Netdata monitoring platform.The deployed project website is publicly accessible through the following custom domain https://thinleyict171.it.com.The monitoring system allows users to observe real-time server performance statistics including CPU usage, memory usage, disk activity, and network traffic through a live web-based dashboard.The monitoring dashboard is accessible through http://20.2.86.127:19999
 
-The project demonstrates cloud computing, Linux administration, DNS configuration, HTTPS implementation, web hosting, and monitoring technologies.
+DNS configuration was implemented using custom domain A records, while HTTPS security was configured using SSL/TLS certificates generated through Certbot. The secure HTTPS implementation provides encrypted communication between users and the cloud server. GitHub was used for project documentation, version control, screenshots, commands, and repository management. The repository demonstrates the project setup process and development progress.
+
+Overall, this project successfully demonstrates the implementation of a functional cloud-based monitoring server environment integrating cloud hosting, Linux server administration, website hosting, DNS configuration, HTTPS security, and real-time monitoring technologies.
