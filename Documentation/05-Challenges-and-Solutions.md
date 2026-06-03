@@ -5,7 +5,7 @@
 
 During the creation of the Microsoft Azure Virtual Machine, the preferred region was unavailable due to limited resource capacity. The selected VM size could not be deployed in the chosen region, which prevented the virtual machine from being created successfully.
 
-<img width="856" height="462" alt="Screenshot 2026-04-09 93125" src="https://github.com/user-attachments/assets/a66e9d1a-812d-4149-8027-25e0feeaa462" />
+<img width="456" height="262" alt="Screenshot 2026-04-09 93125" src="https://github.com/user-attachments/assets/a66e9d1a-812d-4149-8027-25e0feeaa462" />
 
 
 ### Solution
