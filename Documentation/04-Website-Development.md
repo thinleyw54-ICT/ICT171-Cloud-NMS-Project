@@ -58,7 +58,7 @@ This page showcases the presentation component of the project.
 
 ## about.html
 
-The `about.html` page contains student information and project background.
+The `about.html` page contains student information (my information) and project background.
 
 Features:
 
