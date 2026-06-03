@@ -61,6 +61,35 @@ http://20.2.86.127:19999
 
 ---
 
+
+## Certbot. (2026). Certbot user guide. https://certbot.eff.org/
+
+Microsoft Azure. (2026). Azure virtual machines documentation.        
+                           https://learn.microsoft.com/en-us/azure/virtual-machines/
+
+
+Microsoft Azure. (2026). Azure network security groups documentation. 
+                           https://learn.microsoft.com/en-us/azure/virtual-network/network
+                          -security-groups-overview
+
+Namecheap.(2026).Domain and DNS management documentation. 
+                   https://www.namecheap.com/support/
+
+Netdata. (2026). Netdata monitoring documentation. https://learn.netdata.cloud/
+
+Nginx. (2026). Nginx documentation. https://nginx.org/en/docs/
+
+OpenSSH. (2026). OpenSSH manual pages. https://www.openssh.com/manual.html
+
+Ubuntu. (2026). Ubuntu server documentation. https://ubuntu.com/server/docs
+
+Ubuntu. (2026). Uncomplicated Firewall (UFW) documentation. 
+                         https://help.ubuntu.com/community/UFW
+
+
+
+
+
 ## Project Status
 
 Completed for ICT171 Introduction to Server Environments and Architectures (S1, 2026).
