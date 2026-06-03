@@ -108,6 +108,8 @@ HTTPS was successfully enabled and the website became secure.
 ### Problem
 
 The initial website design looked basic and lacked navigation features.
+<img width="610" height="407" alt="Screenshot 2026-05-28 224423" src="https://github.com/user-attachments/assets/2614641f-23db-4665-8ad4-1f8b49e0d416" />
+
 
 ### Solution
 
