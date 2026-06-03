@@ -55,7 +55,7 @@ The custom project website became accessible through the Azure Virtual Machine p
 ### Problem
 
 The custom domain name did not initially resolve to the Azure Virtual Machine.
-<img width="984" height="520" alt="Screenshot 2026-05-28 92450" src="https://github.com/user-attachments/assets/503fdf93-b60f-40e3-951b-78b31f21a560" />
+<img width="484" height="320" alt="Screenshot 2026-05-28 92450" src="https://github.com/user-attachments/assets/503fdf93-b60f-40e3-951b-78b31f21a560" />
 
 
 
