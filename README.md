@@ -50,6 +50,12 @@ http://20.2.86.127:19999
 
 ---
 
+## Custom Monitoring Script
+
+A Bash script was developed to collect server information including memory usage, disk usage, and server uptime from the Azure Ubuntu Virtual Machine. The script provides a quick command-line monitoring solution and complements the Netdata monitoring dashboard.
+
+---
+
 ## Repository Structure
 
 - Documentation
